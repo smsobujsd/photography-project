@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+button {
+    font-family: 'poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+
+/* .logo-container, */
+.nav-links,
+.cart {
+    display: flex;
+}
+
+
+nav {
+
+    flex: 2;
+}
+
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link {
+    color: gray;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.cart {
+
+    flex: -1;
+    justify-content: end;
+}
+
+.presentation {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.intoduction {
+
+    flex: 1;
+}
+
+.intro-text h1 {
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right, #494964, #6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text p {
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585772;
+}
+
+.cta {
+    padding: 50px 0px 0px 0px;
+}
+
+.cta-select {
+    border: 2px solid #c36cbb;
+    background: transparent;
+    color: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta-add {
+    background: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: white;
+    margin: 30px 0px 0px 0px;
+}
+
+.cover {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
+
+.cover img {
+    height: 100%;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
+}
+
+.big-circle {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.5;
+    height: 400px;
+}
+
+.mid-circle {
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    z-index: -1;
+    opacity: 0.4;
+    height: 350px;
+}
+
+.small-circle {
+    position: absolute;
+    bottom: 0%;
+    left: 23%;
+    z-index: -1;
+    opacity: 0.3;
+    height: 300px;
+}
+
+.laptop-select{
+    color: black;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 20%;
+}
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/* -------------FhotoGrafy CSS------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+#landing {
+    background: #fff;
+
+}
+
+#landing-text {
+    display: flex;
+    flex-wrap: 0 1 40VW;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#landing-text h2 {
+    color: #888;
+}
+
+#landing-image {
+    background: url("./img/gallery.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: background 500ms ease;
+}
+
+.btn:hover {
+    background: #feee;
+}
+
+#header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+#header h2 {
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.caption {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+footer {
+    width: 70%;
+    max-width: 900px;
+    text-align: center;
+    padding: 1rem 1rem;
+    margin: auto;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+.footer-title, .footer-contact{
+   color: #ccc;
+}
+
+
+/* ---------Responsive----- */
+@media screen and (max-width :700px){
+    .presentation{
+        margin-left: 5%;
+    }
+    .intro-text h1{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .intro-text p{
+        font-size: 15px;
+    }
+    .cta{
+        width: 50%;
+        display: flex;
+        margin-left: 10%;
+        padding-top: 5%;
+    }
+    .cta-add{
+        margin: 0px 0px 0px 0px;
+    }
+    .cover img{
+        height: 70%;
+    }
+    #landing{
+        margin-top: 10%;
+    }
+    #landing-text{
+        margin-top: 30%;
+    }
+    #landing-image{
+        height: 100vh;
+        margin-top: 1
+        5%;
+    }
+    .btn{
+        margin-top: 1%;
+    }
+    .big-circle{
+        height: 125%;
+    }
+    .mid-circle{
+        height: 95%;
+    }
+    .small-circle{
+        height: 130%;
+    }
+}
+
+
+
+
+@media screen and (max-width :400px) {
+    .presentation{
+        width: 100%;
+    }
+    .intro-text{
+        width: 50%;
+    }
+    .intro-text h1{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .intro-text p{
+        font-size: 10px;
+    }
+    .cta{
+        display: flex;
+        margin-left: 0%;
+        padding-top: 5%;
+    }
+    .cta-add{
+        margin: 0px 0px 0px 0px;
+    }
+    .cover img{
+        width: 200%;
+        float: left;
+    }
+
+    #landing{
+        margin-top: 10%;
+    }
+    #landing-text{
+        margin-top: 30%;
+    }
+    #landing-image{
+        height: 100vh;
+        margin-top: 15%;
+    }
+    .btn{
+        margin-top: 1%;
+    }
+    .big-circle{
+        height: 125%;
+    }
+    .mid-circle{
+        height: 95%;
+    }
+    .small-circle{
+        height: 130%;
+    }
+}
+@media screen and (min-width :700px) {
+
+    #landing{
+        margin-top: 10%;
+    }
+    #landing-image{
+        margin-top: 10%;
+        height: 170vh;
+    }
+}
